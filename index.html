@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Triva Game</title>
+	<!-- CSS Files -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+</head>
+<body>
+	<header id="masthead">
+		<div class="container">
+			<h1>? Random Trivia ?</h1>
+		</div>
+	</header>
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1 class="rules">The Rules</h1>
+			<p class="rules">There are 5 questions. You have 50 seconds to answer all 5 questions.</p>
+			<h2>
+				<button type="button" id="start-button">Start</button>
+			</h2>
+			<!-- timer will be displayed in div#show-number-->
+			<div id="show-number"></div>
+			<!-- question 1 -->
+			<p class="question">1. When did the Liberty Bell get its name?</p>
+			<ul class="answers">
+                <input type="radio" name="q1" value="wrong"><label>When it was made, in 1701</label><br/>
+                <input type="radio" name="q1" value="wrong"><label>When it rang on July 4, 1776</label><br/>
+                <input type="radio" name="q1" value="correct"><label> In the 19th century, when it became a symbol of the abolition of slavery</label><br/>
+                <input type="radio" name="q1" value="wrong"><label>none of the above</label><br/>
+			</ul>
+			<!-- question 2 -->
+			<p class="question">2. What did the "D" in "D-Day" stand for?</p>
+			<ul class="answers">
+                <input type="radio" name="q2" value="wrong"><label>Doom</label><br/>
+                <input type="radio" name="q2" value="correct"><label>Day</label><br/>
+                <input type="radio" name="q2" value="wrong"><label>Dwight (Eisenhower)</label><br/>
+                <input type="radio" name="q2" value="wrong"><label>Dunkirk</label><br/>
+			</ul>
+			<!-- question 3 -->
+			<p class="question">3. Which of these characters turned 40 years old in 1990?</p>
+			<ul class="answers">
+                <input type="radio" name="q3" value="correct"><label>Charlie Brown</label><br/>
+                <input type="radio" name="q3" value="wrong"><label>Bugs Bunny</label><br/>
+                <input type="radio" name="q3" value="wrong"><label>Mickey Mouse</label><br/>
+                <input type="radio" name="q3" value="wrong"><label>Fred Flintstone</label><br/>
+			</ul>
+			<!-- question 4 -->
+			<p class="question">4. Florence Nightingale became known as "the Lady With the Lamp" during which war?</p>
+			<ul class="answers">
+                <input type="radio" name="q4" value="wrong"><label>American Civil War</label><br/>
+                <input type="radio" name="q4" value="correct"><label>Crimean War</label><br/>
+                <input type="radio" name="q4" value="wrong"><label>World War I</label><br/>
+                <input type="radio" name="q4" value="wrong"><label>World War II</label><br/>
+			</ul>
+			<!-- question 5 -->
+			<p class="question">5. Who is third behind Hank Aaron and Babe Ruth in major league career home runs?</p>
+			<ul class="answers">
+                <input type="radio" name="q5" value="wrong"><label>Reggie Jackson</label><br/>
+                <input type="radio" name="q5" value="wrong"><label>Harmon Killebrew</label><br/>
+                <input type="radio" name="q5" value="correct"><label>Willie Mays</label><br/>
+                <input type="radio" name="q5" value="wrong"><label>Frank Robinson</label><br/>
+			</ul>
+			
+			<!-- Submit Button -->
+			<button type="button" id="submit">Submit Final Answers</button>
+			<!-- Results -->
+			<div id="results">
+			    Show me the answers!				
+			</div>
+			<button type="button" id="restart">Play Again</button>
+		</section>
+	</div>
+	<footer id="footer" class="site-footer">
+		<div class="container">
+            <div>
+                Click the "Start" button to begin...
+            </div>
+		</div>
+	</footer>
+	<!-- JavaScript File & jQuery Lib -->
+	
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	
+</body>
+</html>
