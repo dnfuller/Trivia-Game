@@ -1,68 +1,90 @@
+html,
 body {
-	background: black;
-	font-size: 14px;
-	line-height: 34px;
-	color: white;
-}
-* {
-	box-sizing: border-box;
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
 }
 
-header, footer, section{
-	width: 75%;
-	margin-left: auto;
-    margin-right: auto;
-    text-align: center
-}
-header {
-    background: red;
-    height: 100px;
-}
-
-footer {
-	background-color: blue;
-    height: 100px;
-    font-size: 18px;
-    padding-top: 25px;
+body {
+  text-align: center;
+  height: 100%;
+  background: url("../images/pastel_ink_swirl.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-header h1{
-	padding: 30px;
-	font-size: 40px;
-	font-style: bold;
-	font-weight: bold;
-}
-h2{
-	font-size: 30px;
-}
-ul{
-	text-align: auto;
+#wrapper {
+  width: 960px;
+  min-height: 80%;
+  box-sizing: border-box;
+  padding: 5% 0;
+  margin: 5% auto;
+  background: transparent;
 }
 
-.main-section{
-    background-color: white;
-    color: black;
-    opacity: 0.7;
-}
-button{
-	background-color: lightblue;
-	width: 20%;
-	height: 20px;
-	opacity: 1 !important;
-	margin-top: 30px;
-}
-.question, .answers{
-	width: 50%;
-	margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-}
-#submit, #results, #restart, .question, .answers{
-	display: none;
+#sub-wrapper {
+  position: relative;
+  top: 20%;
 }
 
-.rules{
-	font-size: 20px;
-	font-style: bold;
-	font-weight: bold;
+button {
+  font-family: 'Indie Flower', cursive;
+  display: block;
+  width: 200px;
+  height: 80px;
+  margin: 50px auto 0;
+  font-size: 42px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 4.8em;
+  font-weight: bold;
+  color: blue;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+input.choices {
+	margin-left: 20px;
+	margin-right: 3px;
+}
+
+#start {
+  font-family: 'Indie Flower', cursive;
+  margin-top: 10%;
+  background: #f4cce6;
+  border-radius: 5em;
+  background: transparent;
+}
+
+#start:hover {
+  background: #f4cce6;
+  border: 2px solid #6060fc;
+  border-radius: 5em;
+}
+
+:focus { outline: none; }
+
+#quiz-area h2 {
+  margin-top: 50px;
+}
+
+button:hover {
+  background: #f4cce6;
+  border: 2px solid #6060fc;
+  border-radius: 5em;
 }
